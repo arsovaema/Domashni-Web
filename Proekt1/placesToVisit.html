@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>City Explorer</title>
+
+    ]
+    <link rel="stylesheet" href="content.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&family=Fascinate+Inline&family=Spicy+Rice&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&family=Fascinate+Inline&family=Mystery+Quest&family=Spicy+Rice&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+
+    <script src="placesToVisit.js" defer></script>
+  </head>
+
+  <body>
+    <nav>
+      <a href="index.html"> <div class="title">City Explorer</div></a>
+      <div class="links">
+        <a href="#places">
+          <i class="fa-solid fa-location-dot"></i> Places to Visit
+        </a>
+        <a href="#gallery"> <i class="fa-solid fa-images"></i> Gallery </a>
+        <a href="#survey"> <i class="fa-solid fa-question"></i> Survey </a>
+      </div>
+    </nav>
+
+    <main class="page">
+      <section class="section section--places" id="places">
+        <div class="container">
+          <header class="section__header">
+            <h2>Places to Visit</h2>
+            <p>Curated landmarks, museums, parks, and hidden gems.</p>
+          </header>
+          <div class="places-wrapper">
+            <button id="prev-place">
+              <i class="fa-solid fa-chevron-left"></i>
+            </button>
+            <div id="place-container" class="place">
+              <div class="place-content">
+                <div id="images">
+                  <h3 id="place-name"></h3>
+                  <img id="place-image" src="" alt="place photo" />
+                  <p id="place-desc"></p>
+                </div>
+                <div class="comments">
+                  <h4>Comments:</h4>
+                  <div class="comment-form">
+                    <input
+                      type="text"
+                      id="comment-input"
+                      placeholder="Write a comment..."
+                    />
+                    <button id="add-comment">Post</button>
+                  </div>
+                  <ul id="comment-list"></ul>
+                </div>
+              </div>
+            </div>
+            <button id="next-place">
+              <i class="fa-solid fa-chevron-right"></i>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--gallery" id="gallery">
+        <div class="container">
+          <header class="section__header">
+            <h2>Gallery</h2>
+
+            <p>A collection of memories from our community.</p>
+          </header>
+
+          <div class="gallery-navigation">
+            <button id="gallery-prev">
+              <i class="fa-solid fa-chevron-left"></i>
+            </button>
+
+            <div class="gallery-container">
+              <div class="gallery-item">
+                <img
+                  src=""
+                  alt="Gallery image 1"
+                  class="gallery-image"
+                  id="img-0"
+                />
+
+                <div class="gallery-actions">
+                  <button class="like-btn" data-index="0">
+                    <i class="fa-regular fa-thumbs-up"></i>
+                    <span class="like-count">0</span>
+                  </button>
+                  <button class="dislike-btn" data-index="0">
+                    <i class="fa-regular fa-thumbs-down"></i>
+                    <span class="dislike-count">0</span>
+                  </button>
+                </div>
+
+                <div class="gallery-comment-section">
+                  <div class="gallery-comment-form">
+                    <input
+                      type="text"
+                      class="gallery-comment-input"
+                      id="gallery-comment-input-0"
+                      placeholder="Write a comment..."
+                    />
+                    <button class="gallery-comment-post" data-index="0">
+                      Post
+                    </button>
+                  </div>
+                  <ul
+                    class="gallery-comment-list"
+                    id="gallery-comment-list-0"
+                  ></ul>
+                </div>
+              </div>
+
+              <div class="gallery-item">
+                <img
+                  src=""
+                  alt="Gallery image 1"
+                  class="gallery-image"
+                  id="img-1"
+                />
+
+                <div class="gallery-actions">
+                  <button class="like-btn" data-index="1">
+                    <i class="fa-regular fa-thumbs-up"></i>
+                    <span class="like-count">0</span>
+                  </button>
+                  <button class="dislike-btn" data-index="1">
+                    <i class="fa-regular fa-thumbs-down"></i>
+                    <span class="dislike-count">0</span>
+                  </button>
+                </div>
+
+                <div class="gallery-comment-section">
+                  <div class="gallery-comment-form">
+                    <input
+                      type="text"
+                      class="gallery-comment-input"
+                      id="gallery-comment-input-1"
+                      placeholder="Write a comment..."
+                    />
+                    <button class="gallery-comment-post" data-index="1">
+                      Post
+                    </button>
+                  </div>
+                  <ul
+                    class="gallery-comment-list"
+                    id="gallery-comment-list-1"
+                  ></ul>
+                </div>
+              </div>
+              <div class="gallery-item">
+                <img
+                  src=""
+                  alt="Gallery image 1"
+                  class="gallery-image"
+                  id="img-2"
+                />
+
+                <div class="gallery-actions">
+                  <button class="like-btn" data-index="2">
+                    <i class="fa-regular fa-thumbs-up"></i>
+                    <span class="like-count">0</span>
+                  </button>
+                  <button class="dislike-btn" data-index="2">
+                    <i class="fa-regular fa-thumbs-down"></i>
+                    <span class="dislike-count">0</span>
+                  </button>
+                </div>
+
+                <div class="gallery-comment-section">
+                  <div class="gallery-comment-form">
+                    <input
+                      type="text"
+                      class="gallery-comment-input"
+                      id="gallery-comment-input-2"
+                      placeholder="Write a comment..."
+                    />
+                    <button class="gallery-comment-post" data-index="2">
+                      Post
+                    </button>
+                  </div>
+                  <ul
+                    class="gallery-comment-list"
+                    id="gallery-comment-list-2"
+                  ></ul>
+                </div>
+              </div>
+            </div>
+
+            <button id="gallery-next">
+              <i class="fa-solid fa-chevron-right"></i>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--survey" id="survey">
+        <div class="container">
+          <header class="section__header">
+            <h2>Survey</h2>
+            <p>Leave a review of our page.</p>
+          </header>
+          <form id="survey-form">
+            <h3 id="survey-welcome-message">Hello!</h3>
+
+            <fieldset>
+                           
+              <legend>1. How helpful did you find this site?</legend>
+                           
+              <div class="radio-group">
+                               
+                <label
+                  ><input type="radio" name="helpfulness" value="not at all" />
+                  Not at all</label
+                >
+
+                <label
+                  ><input
+                    type="radio"
+                    name="helpfulness"
+                    value="a little bit"
+                  />
+                  A little bit</label
+                >
+
+                <label
+                  ><input type="radio" name="helpfulness" value="medium" />
+                  Medium</label
+                >
+
+                <label
+                  ><input type="radio" name="helpfulness" value="very" />
+                  Very</label
+                >
+
+                <label
+                  ><input type="radio" name="helpfulness" value="extremely" />
+                  Extremely</label
+                >
+                             
+              </div>
+                         
+            </fieldset>
+
+                                   
+            <fieldset>
+                           
+              <legend>2. Rate the look of the site (1-100)</legend>
+                           
+              <div class="slider-group">
+                               
+                <input
+                  type="range"
+                  id="rating-slider"
+                  min="1"
+                  max="100"
+                  value="50"
+                />
+                                <output id="range-value">50</output>            
+                 
+              </div>
+                         
+            </fieldset>
+
+                                   
+            <fieldset>
+                           
+              <legend>3. Would you visit this website again?</legend>
+                           
+              <div class="radio-group">
+                               
+                <label
+                  ><input type="radio" name="visit-again" value="yes" />
+                  Yes</label
+                >
+                               
+                <label
+                  ><input type="radio" name="visit-again" value="no" />
+                  No</label
+                >
+                             
+              </div>
+                         
+            </fieldset>
+
+                                   
+            <fieldset>
+                           
+              <legend>4. Rate the look of the site (1-5 Stars)</legend>
+                           
+              <div class="star-rating">
+                                               
+                <input type="radio" id="star-5" name="stars" value="5" /><label
+                  for="star-5"
+                  ><i class="fas fa-star"></i
+                ></label>
+                               
+                <input type="radio" id="star-4" name="stars" value="4" /><label
+                  for="star-4"
+                  ><i class="fas fa-star"></i
+                ></label>
+                               
+                <input type="radio" id="star-3" name="stars" value="3" /><label
+                  for="star-3"
+                  ><i class="fas fa-star"></i
+                ></label>
+                               
+                <input type="radio" id="star-2" name="stars" value="2" /><label
+                  for="star-2"
+                  ><i class="fas fa-star"></i
+                ></label>
+                               
+                <input type="radio" id="star-1" name="stars" value="1" /><label
+                  for="star-1"
+                  ><i class="fas fa-star"></i
+                ></label>
+                             
+              </div>
+                         
+            </fieldset>
+
+                                   
+            <fieldset>
+                           
+              <legend>5. What should we change?</legend>
+                           
+              <textarea
+                id="survey-note"
+                placeholder="Your feedback is valuable..."
+              ></textarea>
+                         
+            </fieldset>
+
+                       
+            <button type="submit" id="survey-submit">Submit Survey</button>    
+                 
+          </form>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <div class="container">
+          <p>© City Explorer</p>
+        </div>
+      </footer>
+    </main>
+  </body>
+</html>

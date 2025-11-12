@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>City Explorer</title>
+    <link rel="stylesheet" href="styles1.css" />
+    <link rel="stylesheet" href="textAnimation.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fascinate+Inline&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&family=Fascinate+Inline&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&family=Fascinate+Inline&family=Spicy+Rice&display=swap"
+      rel="stylesheet"
+    />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="page-container">
+      <header>
+        <nav>
+          <a href="index.html"> <div class="title">City Explorer</div></a>
+          <div class="links">
+            <a href="placesToVisit.html"
+              ><i class="fa-solid fa-location-dot"></i> Places to Visit</a
+            >
+            <a href="placesToVisit.html#gallery"
+              ><i class="fa-solid fa-images"></i> Gallery</a
+            >
+            <a href="placesToVisit.html#survey"
+              ><i class="fa-solid fa-question"></i> Survey</a
+            >
+          </div>
+        </nav>
+      </header>
+      <div class="main">
+        <div class="picturediv">
+          <div class="textOverPic">
+            <h1>Have you ever visited Prague?</h1>
+            <p>
+              Prague, what a beautiful city to be in. Located in the Czech
+              Republic, Prague is one of the most enchanting European cities to
+              this day. The history itself and the culture of life makes the
+              city something to cherish when you visit. The first thing you
+              notice in the city is the Prague Castle, which stands tall on the
+              one side of the Vltava River. Besides the breathtaking
+              architecture, Prague provides a variety of restaurants, art
+              museums, churches, scenic views, and a great nightlife.
+            </p>
+            <div>
+              <p>
+                Do you want to find out more about the city? Click the
+                'Register' button to join our comunity!
+              </p>
+            </div>
+            <div class="kopceto">
+              <button class="regbtn" id="registerBtn">Register</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <p>© 2025 City Explorer</p>
+      </footer>
+    </div>
+    <dialog>
+      <form class="register-form">
+        <div>
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required />
+          <label for="surname">Surname</label>
+          <input type="text" id="surname" name="surname" required />
+        </div>
+        <div class="regbtns">
+          <button class="Submit" autofocus>Submit</button>
+          <button class="Close">Close</button>
+        </div>
+      </form>
+    </dialog>
+  </body>
+</html>
