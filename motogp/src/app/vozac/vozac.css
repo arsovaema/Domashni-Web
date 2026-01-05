@@ -1,0 +1,18 @@
+button {
+    width: 70px;
+    height: 50px;
+    border: 5px solid darkblue;
+    color: darkblue;
+    background-color: lightblue;
+    cursor: pointer;
+    border-radius: 10px;
+}
+button:hover {
+    background-color: aqua;
+}
+.prva {
+    display: flex;
+    flex-direction: row;
+    gap:15px;
+    border: 5px solid yellow;
+}

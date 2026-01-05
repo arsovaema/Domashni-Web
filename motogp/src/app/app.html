@@ -1,0 +1,11 @@
+<div class="logodiv">
+  <img class="logo" src="https://cdn-8.motorsport.com/images/amp/YMd9ENV2/s6/motogp-logo-2.jpg" >
+</div>
+
+<div>
+  <app-vozac  *ngFor="let moto of Shoferi; index as i; first as prv; last as posleden;odd as nepar;even as paren"
+  [motordzija]="moto" (click)="soul()" [index]="i+1"
+  [class.is-first]="nepar"
+  [class.is-even]="paren" ></app-vozac>
+  
+</div>

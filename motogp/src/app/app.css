@@ -1,0 +1,26 @@
+app-vozac {
+    display: block;
+    width: 100%;
+    margin-bottom: 15px;
+    
+}
+app-vozac.is-first{
+    
+    color: yellowgreen;
+    background-color: rgb(205, 89, 89);
+    font-weight: 600;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: overline;
+}
+app-vozac.is-even{
+    color: red;
+    background-color: rgb(71, 190, 71);
+    font-weight: 700;
+    text-decoration: underline;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   
+}
+.logo{
+    height: 200px;
+    width: 250px;
+}
